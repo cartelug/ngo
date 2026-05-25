@@ -4,277 +4,370 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>NGO BUS '90 | Fraternitas Aeterna</title>
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain"></div>
 
-  <div class="spb" id="spb"></div>
+  <!-- Grain Overlay -->
+  <div class="grain" aria-hidden="true"></div>
 
-  <div class="cur" id="cur"></div>
-  <div class="cur-t" id="curt"></div>
+  <!-- Scroll Progress Bar -->
+  <div class="spb" id="spb" aria-hidden="true"></div>
 
-  <div class="ld" id="ld">
+  <!-- Custom Cursor (Desktop Only) -->
+  <div class="cur" id="cur" aria-hidden="true"></div>
+  <div class="cur-t" id="curt" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="ld" id="ld" role="status" aria-label="Loading">
     <div class="ld-content">
-      <div class="ld-logo">NGO <span>BUS</span> '90</div>
+      <div class="ld-crest">✦</div>
+      <div class="ld-logo">NGO <em>BUS</em> '90</div>
       <div class="ld-sub">Fraternitas Aeterna</div>
-      <div class="ld-bar"><div class="ld-bar-fill"></div></div>
+      <div class="ld-bar"><div class="ld-fill"></div></div>
     </div>
   </div>
 
-  <nav id="nav">
-    <div class="nb">NGO <span>BUS</span> '90</div>
-    <ul class="nl" id="nl">
-      <li><a href="#jamas">The Jamas</a></li>
+  <!-- Navigation -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nb" aria-label="NGO Bus 90 Home">NGO <em>BUS</em> '90</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="nl">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nl" id="nl" role="list">
+      <li><a href="#jamas">Brotherhood</a></li>
       <li><a href="#council">Council</a></li>
       <li><a href="#events">Events</a></li>
       <li><a href="#nice">N.I.C.E.</a></li>
       <li><a href="#connect">Directory</a></li>
       <li><a href="#plan">Mutual Plan</a></li>
     </ul>
-    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <div class="sdots" id="sdots">
-    <span class="sdot a" data-s="hero" data-l="Home"></span>
-    <span class="sdot" data-s="jamas" data-l="The Jamas"></span>
-    <span class="sdot" data-s="nice" data-l="N.I.C.E."></span>
-    <span class="sdot" data-s="connect" data-l="Directory"></span>
+  <!-- Side Nav Dots (Desktop) -->
+  <nav class="sdots" id="sdots" aria-label="Section navigation">
+    <button class="sdot a" data-s="hero" aria-label="Go to Home"></button>
+    <button class="sdot" data-s="jamas" aria-label="Go to Brotherhood"></button>
+    <button class="sdot" data-s="nice" aria-label="Go to N.I.C.E."></button>
+    <button class="sdot" data-s="connect" aria-label="Go to Directory"></button>
+  </nav>
+
+  <!-- Floating Action Button -->
+  <button class="fab" id="fab" aria-label="Quick actions" aria-expanded="false">
+    <span class="fab-icon">+</span>
+  </button>
+  <div class="fab-menu" id="fabMenu" role="menu">
+    <a href="#plan" class="fab-item" role="menuitem">Contribute Fund</a>
+    <a href="#connect" class="fab-item" role="menuitem">Contact Council</a>
   </div>
 
-  <button class="fab" id="fab">+</button>
-  <div class="fab-menu" id="fabMenu">
-    <a href="#plan" class="fab-item">Contribute Fund</a>
-    <a href="#connect" class="fab-item">Contact Council</a>
-  </div>
-
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="Images/namilyango school bus.jpg" alt="Namilyango School Bus">
-      <div class="hero-vignette"></div>
+      <img src="Images/namilyango school bus.jpg" alt="The Namilyango School Bus, 1990" loading="eager">
+      <div class="hero-over"></div>
     </div>
-    <div class="hero-c">
-      <div class="hero-tag">Namilyango College</div>
-      <h1 class="hero-h"><span class="reveal-text">NGO</span> <span class="reveal-text gold-text">BUS</span> <span class="reveal-text">'90</span></h1>
-      <div class="hero-divider">
-        <div class="line"></div>
-        <div class="yr">1990 — 1996</div>
-        <div class="line"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow rv-hero">
+        <span class="eyebrow-rule"></span>
+        <span>Namilyango College · Est. 1990</span>
+        <span class="eyebrow-rule"></span>
       </div>
-      <p class="hero-sub">The definitive record of the brotherhood. Built for memory, connection, and generational wealth.</p>
-      <div class="hero-cta">
+      <h1 class="hero-h">
+        <span class="rh rh1">NGO</span>
+        <em class="rh rh2">BUS</em>
+        <span class="rh rh3">'90</span>
+      </h1>
+      <div class="hero-yr rv-hero">1990 — 1996</div>
+      <p class="hero-sub rv-hero">The definitive record of the brotherhood. Built for memory, connection, and generational wealth.</p>
+      <div class="hero-cta rv-hero">
         <a href="#nice" class="btn btn-gold">Enter N.I.C.E. Portal</a>
-        <a href="#jamas" class="btn btn-outline">Explore the Archive</a>
+        <a href="#jamas" class="btn btn-ghost">Explore the Archive</a>
       </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <div class="marquee">
-    <div class="marquee-track" id="mqt"></div>
+  <!-- Marquee Ticker -->
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-inner">
+      <div class="mq-track" id="mqt"></div>
+    </div>
   </div>
 
-  <section class="s ls" id="jamas">
+  <!-- ═══════════════════════════════════ BROTHERHOOD ═══════════════════════════ -->
+  <section class="s light-s" id="jamas">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">01</div>
         <div class="stag">Genesis</div>
         <h2 class="stit">The Brotherhood</h2>
-      </div>
-      <div class="jamas-wrap">
-        <div class="jamas-text">
+      </header>
+      <div class="brotherhood-layout">
+        <div class="brotherhood-prose">
           <p class="lede rv">We boarded the bus as boys in 1990. We stepped off as men in 1996. The bonds forged in those six years have never broken.</p>
-          <p class="rv">This is the collective of those who walked the halls of Namilyango. The boarding houses, the chapel mornings, the rugby pitches, and the unyielding discipline.</p>
+          <p class="body-copy rv">This is the collective of those who walked the halls of Namilyango. The boarding houses, the chapel mornings, the rugby pitches — and the unyielding discipline of an institution that shaped us all.</p>
         </div>
-        <div class="jamas-stats rv">
-          <div class="stat-block"><div class="stat-n" data-c="1990">0</div><div class="stat-l">Inception Year</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="1996">0</div><div class="stat-l">Departure Year</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="30">0</div><div class="stat-l">Years Active</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="47">0</div><div class="stat-l">Verified Members</div></div>
+        <div class="stats-grid rv">
+          <div class="stat-card">
+            <div class="stat-n" data-c="1990">0</div>
+            <div class="stat-l">Inception Year</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-n" data-c="1996">0</div>
+            <div class="stat-l">Departure Year</div>
+          </div>
+          <div class="stat-card featured">
+            <div class="stat-n" data-c="30">0</div>
+            <div class="stat-l">Years Active</div>
+          </div>
+          <div class="stat-card featured">
+            <div class="stat-n" data-c="47">0</div>
+            <div class="stat-l">Verified Members</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="s ds" id="council">
+  <!-- ═══════════════════════════════════ COUNCIL ═══════════════════════════════ -->
+  <section class="s dark-s" id="council">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">02</div>
         <div class="stag">Leadership</div>
         <h2 class="stit">Inner Council</h2>
-      </div>
+      </header>
       <div class="council-grid">
-        <div class="council-card rv">
-          <div class="cc-img-wrap"><img src="Images/JOHN baptist.jpg" alt="JB" onerror="this.style.display='none'"></div>
+        <article class="council-card rv">
+          <div class="cc-portrait">
+            <img src="Images/JOHN baptist.jpg" alt="John Baptist Matovu" onerror="this.parentElement.classList.add('no-img')">
+            <div class="cc-fallback">JM</div>
+            <div class="cc-gold-bar"></div>
+          </div>
           <div class="cc-body">
             <div class="cc-role">Chairman</div>
-            <div class="cc-name">John Baptist Matovu</div>
+            <h3 class="cc-name">John Baptist Matovu</h3>
             <div class="cc-aka">"Jibze"</div>
           </div>
-        </div>
-        <div class="council-card rv">
-          <div class="cc-img-wrap"><img src="Images/mitch egwang.jpg" alt="Mitch" onerror="this.style.display='none'"></div>
+        </article>
+        <article class="council-card rv">
+          <div class="cc-portrait">
+            <img src="Images/mitch egwang.jpg" alt="Mitch Egwang" onerror="this.parentElement.classList.add('no-img')">
+            <div class="cc-fallback">ME</div>
+            <div class="cc-gold-bar"></div>
+          </div>
           <div class="cc-body">
             <div class="cc-role">Chief Mobilizer</div>
-            <div class="cc-name">Mitch Egwang</div>
+            <h3 class="cc-name">Mitch Egwang</h3>
             <div class="cc-aka">"Nganga"</div>
           </div>
-        </div>
-        <div class="council-card rv">
-          <div class="cc-img-wrap"><div class="cc-placeholder">MS</div></div>
+        </article>
+        <article class="council-card rv">
+          <div class="cc-portrait no-img">
+            <div class="cc-fallback">MS</div>
+            <div class="cc-gold-bar"></div>
+          </div>
           <div class="cc-body">
             <div class="cc-role">Treasurer</div>
-            <div class="cc-name">Mbanda Shyaka</div>
+            <h3 class="cc-name">Mbanda Shyaka</h3>
             <div class="cc-aka">"Mbandzo"</div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="s ls" id="events">
+  <!-- ═══════════════════════════════════ EVENTS ════════════════════════════════ -->
+  <section class="s light-s" id="events">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">03</div>
         <div class="stag">Operations</div>
         <h2 class="stit">Agenda & Logs</h2>
-      </div>
-      <div class="split-layout">
+      </header>
+      <div class="events-layout">
         <div class="events-col">
-          <h3 class="sub-h rv">Upcoming Deployments</h3>
+          <h3 class="col-head rv">Upcoming Deployments</h3>
           <div id="evList"></div>
         </div>
         <div class="timeline-col">
-          <h3 class="sub-h rv">Historical Markers</h3>
-          <div class="tl-track" id="tlTrack"></div>
+          <h3 class="col-head rv">Historical Markers</h3>
+          <div class="tl-spine" id="tlTrack"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="mem-vault" id="vault">
+  <!-- ═══════════════════════════════════ MEMORY VAULT ══════════════════════════ -->
+  <section class="vault-s" id="vault">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">04</div>
         <div class="stag">Archives</div>
         <h2 class="stit">Memory Vault</h2>
-      </div>
+      </header>
     </div>
-    <div class="gallery-wrap" id="gw">
-      <div class="gallery-track" id="gt">
-        <div class="gallery-card"><img src="Images/namilyango school bus.jpg" alt="Bus"><div class="gc-ov"><span>1990</span><h4>The Namilyango Bus</h4></div></div>
-        <div class="gallery-card text-card dark-card"><div>📷</div><p>Awaiting highly classified archive uploads.</p></div>
-        <div class="gallery-card text-card green-card"><div>🎓</div><h4>Nabisunsa Prom Night</h4><p>November 1996</p></div>
+    <div class="gallery-outer">
+      <div class="gallery-scroll" id="gt">
+        <div class="gcard">
+          <img src="Images/namilyango school bus.jpg" alt="The Namilyango Bus, 1990">
+          <div class="gcard-ov">
+            <span class="gcard-yr">1990</span>
+            <h4 class="gcard-title">The Namilyango Bus</h4>
+          </div>
+        </div>
+        <div class="gcard gcard-text gcard-dark">
+          <div class="gcard-icon">📷</div>
+          <p>Awaiting classified archive uploads from verified members.</p>
+        </div>
+        <div class="gcard gcard-text gcard-forest">
+          <div class="gcard-icon">🎓</div>
+          <h4>Nabisunsa Prom Night</h4>
+          <p>November 1996</p>
+        </div>
+        <div class="gcard gcard-text gcard-gold">
+          <div class="gcard-icon">🏉</div>
+          <h4>Rugby Grounds</h4>
+          <p>Where discipline was forged</p>
+        </div>
       </div>
+      <div class="gallery-fade-left" aria-hidden="true"></div>
+      <div class="gallery-fade-right" aria-hidden="true"></div>
     </div>
   </section>
 
-  <section class="s ds" id="nice">
+  <!-- ═══════════════════════════════════ N.I.C.E. ══════════════════════════════ -->
+  <section class="s dark-s" id="nice">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">05</div>
         <div class="stag">Asset Management</div>
         <h2 class="stit">N.I.C.E. Portfolio</h2>
-      </div>
-      
-      <div class="nice-metrics">
-        <div class="nm-card rv">
-          <div class="nm-lbl">AUM (Assets Under Mgt)</div>
-          <div class="nm-val"><span>UGX</span> <span data-c="142000000">0</span></div>
-          <div class="nm-trend pos">+12.4% Fiscal Year</div>
+      </header>
+
+      <div class="metrics-row">
+        <div class="metric-card rv">
+          <div class="metric-lbl">Assets Under Management</div>
+          <div class="metric-val">
+            <span class="metric-unit">UGX</span>
+            <span class="metric-num" data-c="142000000">0</span>
+          </div>
+          <div class="metric-trend up">▲ +12.4% Fiscal Year</div>
         </div>
-        <div class="nm-card rv">
-          <div class="nm-lbl">Active Acquisitions</div>
-          <div class="nm-val" data-c="3">0</div>
-          <div class="nm-trend">Real Estate & Equities</div>
+        <div class="metric-card rv">
+          <div class="metric-lbl">Active Acquisitions</div>
+          <div class="metric-val">
+            <span class="metric-num" data-c="3">0</span>
+          </div>
+          <div class="metric-trend">Real Estate & Equities</div>
         </div>
-        <div class="nm-card rv">
-          <div class="nm-lbl">Syndicate Members</div>
-          <div class="nm-val" data-c="47">0</div>
-          <div class="nm-trend">Fully Vested</div>
+        <div class="metric-card rv">
+          <div class="metric-lbl">Syndicate Members</div>
+          <div class="metric-val">
+            <span class="metric-num" data-c="47">0</span>
+          </div>
+          <div class="metric-trend">Fully Vested</div>
         </div>
       </div>
 
-      <div class="vision-box rv">
+      <blockquote class="vision-quote rv">
         <p>"To compound the trust of the brotherhood into generational wealth — through disciplined capital allocation, transparent reporting, and aggressive shared upside."</p>
-      </div>
+      </blockquote>
 
-      <div class="split-layout mt-60">
+      <div class="meetings-row">
         <div>
-          <h3 class="sub-h rv">Board Meetings</h3>
-          <ul class="exec-list" id="upMtg"></ul>
+          <h3 class="col-head dark-col rv">Board Meetings</h3>
+          <ul class="mtg-list" id="upMtg"></ul>
         </div>
         <div>
-          <h3 class="sub-h rv">Recent Resolutions</h3>
-          <ul class="exec-list" id="rcMtg"></ul>
+          <h3 class="col-head dark-col rv">Recent Resolutions</h3>
+          <ul class="mtg-list" id="rcMtg"></ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="s ls" id="connect">
+  <!-- ═══════════════════════════════════ DIRECTORY ════════════════════════════ -->
+  <section class="s light-s" id="connect">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">06</div>
         <div class="stag">The Network</div>
         <h2 class="stit">Executive Directory</h2>
-      </div>
-      
-      <div class="rc-controls rv">
-        <div class="search-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="rcSearch" placeholder="Search by name, alias, or sector...">
+      </header>
+
+      <div class="dir-controls rv">
+        <div class="dir-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          <input type="search" id="rcSearch" placeholder="Search name, alias, or sector…" aria-label="Search directory">
         </div>
-        <div class="filters" id="rcFilters">
-          <button class="filter-btn active" data-cat="all">Global</button>
-          <button class="filter-btn" data-cat="finance">Finance & Ops</button>
-          <button class="filter-btn" data-cat="law">Legal</button>
-          <button class="filter-btn" data-cat="medicine">Medical</button>
+        <div class="dir-filters" id="rcFilters" role="group" aria-label="Filter by category">
+          <button class="filt active" data-cat="all">All</button>
+          <button class="filt" data-cat="finance">Finance & Ops</button>
+          <button class="filt" data-cat="law">Legal</button>
+          <button class="filt" data-cat="medicine">Medical</button>
         </div>
       </div>
 
-      <div class="directory-grid" id="rcGrid"></div>
+      <div class="dir-grid" id="rcGrid" role="list"></div>
     </div>
   </section>
 
-  <section class="s ds" id="plan">
+  <!-- ═══════════════════════════════════ MUTUAL PLAN ══════════════════════════ -->
+  <section class="s dark-s" id="plan">
     <div class="sc">
-      <div class="sh rv">
+      <header class="sh rv">
         <div class="snum">07</div>
         <div class="stag">Endowment & Honor</div>
         <h2 class="stit">The Mutual Plan</h2>
-      </div>
+      </header>
 
-      <div class="plan-grid">
+      <div class="plan-layout">
         <div class="plan-card rv">
+          <div class="plan-card-tag">Active Protocol</div>
           <h3>Bereavement Protocol</h3>
           <p>When an active member's household experiences loss, the syndicate moves as one. No fixed quotas; capital is deployed rapidly based on collective resources to ensure no family stands alone.</p>
           <div class="fund-status">
-            <div class="pulse-dot"></div>
-            <span>Fund Status: Active & Deployed</span>
+            <div class="pulse-dot" aria-hidden="true"></div>
+            <span>Fund Status: Active &amp; Deployed</span>
           </div>
-          <button class="btn btn-gold mt-20">Initialize Contribution</button>
+          <button class="btn btn-gold plan-btn">Initialize Contribution</button>
         </div>
-        
-        <div class="memoriam-panel rv">
-          <h3 class="text-center" style="color: var(--gold); margin-bottom: 30px; font-family: var(--f-serif);">In Memoriam</h3>
+
+        <div class="memoriam rv">
+          <div class="memoriam-header">
+            <span class="memoriam-rule"></span>
+            <h3>In Memoriam</h3>
+            <span class="memoriam-rule"></span>
+          </div>
           <div class="mem-list">
-            <div class="mem-item">
-              <img src="Images/Mugerwa anthony (deceased).jpg" alt="Anthony" onerror="this.style.display='none'">
-              <div>
+            <div class="mem-entry">
+              <div class="mem-portrait">
+                <img src="Images/Mugerwa anthony (deceased).jpg" alt="Mugerwa Anthony" onerror="this.parentElement.classList.add('no-img')">
+                <div class="mem-fallback">MA</div>
+              </div>
+              <div class="mem-info">
                 <h4>Mugerwa Anthony</h4>
-                <span>"Kapiti"</span>
+                <span class="mem-alias">"Kapiti"</span>
+                <span class="mem-rest">Rest in Peace</span>
               </div>
             </div>
-            <div class="mem-item">
-              <img src="Images/ofong peter (deceased).jpg" alt="Peter" onerror="this.style.display='none'">
-              <div>
+            <div class="mem-entry">
+              <div class="mem-portrait">
+                <img src="Images/ofong peter (deceased).jpg" alt="Ofong Peter" onerror="this.parentElement.classList.add('no-img')">
+                <div class="mem-fallback">OP</div>
+              </div>
+              <div class="mem-info">
                 <h4>Ofong Peter</h4>
-                <span>"Jama"</span>
+                <span class="mem-alias">"Jama"</span>
+                <span class="mem-rest">Rest in Peace</span>
               </div>
             </div>
           </div>
@@ -283,29 +376,32 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════ -->
   <footer>
     <div class="sc">
-      <div class="ft-grid">
+      <div class="ft-body">
         <div class="ft-brand">
-          <h2>NGO <span>BUS</span> '90</h2>
+          <div class="ft-logo">NGO <em>BUS</em> '90</div>
           <p>Bound in memory, bound in service, bound for life. The absolute standard of Namilyango brotherhood.</p>
+          <div class="ft-crest" aria-hidden="true">✦</div>
         </div>
-        <div class="ft-links">
+        <div class="ft-col">
           <h4>Portal Access</h4>
           <a href="#jamas">The Archives</a>
           <a href="#nice">N.I.C.E. Dashboard</a>
           <a href="#connect">Global Directory</a>
           <a href="#plan">Mutual Endowment</a>
         </div>
-        <div class="ft-contact">
+        <div class="ft-col">
           <h4>Direct Comm</h4>
           <a href="#">Contact Chairman</a>
           <a href="#">Treasury Desk</a>
+          <a href="#">Legal Counsel</a>
         </div>
       </div>
       <div class="ft-bottom">
         <span>&copy; 2026 NGO Bus '90 Executive Committee</span>
-        <span class="motto">Fraternitas Aeterna</span>
+        <span class="motto" aria-label="Fraternitas Aeterna"><em>Fraternitas Aeterna</em></span>
       </div>
     </div>
   </footer>
