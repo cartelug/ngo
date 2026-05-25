@@ -3,388 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>NGO BUS '90 — Namilyango Brotherhood</title>
+  <title>NGO BUS '90 | Fraternitas Aeterna</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="spb" id="spb"></div>
-  <div class="cur" id="cur"></div>
-  <div class="cur-t" id="curt"></div>
   <div class="grain"></div>
 
+  <div class="spb" id="spb"></div>
+
+  <div class="cur" id="cur"></div>
+  <div class="cur-t" id="curt"></div>
+
   <div class="ld" id="ld">
-    <svg class="ld-crest" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-      <defs><clipPath id="lsc"><path d="M10 8 L60 2 L110 8 L110 90 Q60 130 10 90 Z"/></clipPath></defs>
-      <g clip-path="url(#lsc)">
-        <rect x="10" y="2" width="100" height="50" fill="#183050" opacity=".8"/>
-        <path d="M52 24 Q48 18 40 20 Q36 22 38 26 Q35 25 33 28 Q36 30 40 28 L50 32 Q55 34 62 30 Q68 26 72 22 Q66 24 60 22 Q56 20 52 24Z" fill="rgba(245,240,227,.7)"/>
-        <rect x="10" y="52" width="50" height="78" fill="#7A2E1E" opacity=".6"/>
-        <line x1="35" y1="62" x2="35" y2="90" stroke="rgba(245,240,227,.5)" stroke-width="1.5"/>
-        <circle cx="35" cy="60" r="4" fill="none" stroke="rgba(245,240,227,.5)" stroke-width="1"/>
-        <path d="M25 86 Q35 94 45 86" fill="none" stroke="rgba(245,240,227,.5)" stroke-width="1.5"/>
-        <line x1="28" y1="76" x2="42" y2="76" stroke="rgba(245,240,227,.5)" stroke-width="1.5"/>
-        <rect x="60" y="52" width="50" height="78" fill="#C4952A" opacity=".45"/>
-        <line x1="82" y1="60" x2="82" y2="96" stroke="rgba(245,240,227,.5)" stroke-width="1.5"/>
-        <path d="M74 70 Q82 60 90 70" fill="none" stroke="rgba(245,240,227,.5)" stroke-width="1.5"/>
-        <line x1="74" y1="78" x2="90" y2="78" stroke="rgba(245,240,227,.5)" stroke-width="1"/>
-      </g>
-      <path d="M10 8 L60 2 L110 8 L110 90 Q60 130 10 90 Z" fill="none" stroke="#2A6448" stroke-width="2.5" opacity=".8"/>
-    </svg>
-    <div class="ld-name">NGO <span>BUS</span> '90</div>
-    <div class="ld-label">Namilyango Brotherhood</div>
-    <div class="ld-bar"><div class="ld-bar-fill"></div></div>
+    <div class="ld-content">
+      <div class="ld-logo">NGO <span>BUS</span> '90</div>
+      <div class="ld-sub">Fraternitas Aeterna</div>
+      <div class="ld-bar"><div class="ld-bar-fill"></div></div>
+    </div>
   </div>
 
   <nav id="nav">
-    <div class="nb">NGO <em>BUS</em> '90</div>
+    <div class="nb">NGO <span>BUS</span> '90</div>
     <ul class="nl" id="nl">
       <li><a href="#jamas">The Jamas</a></li>
       <li><a href="#council">Council</a></li>
       <li><a href="#events">Events</a></li>
-      <li><a href="#timeline">Journey</a></li>
       <li><a href="#nice">N.I.C.E.</a></li>
-      <li><a href="#memorial">Memoriam</a></li>
-      <li><a href="#connect">Connect</a></li>
-      <li><a href="#plan">Funeral Plan</a></li>
+      <li><a href="#connect">Directory</a></li>
+      <li><a href="#plan">Mutual Plan</a></li>
     </ul>
-    <button class="ham" id="ham" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <div class="sdots" id="sdots">
     <span class="sdot a" data-s="hero" data-l="Home"></span>
     <span class="sdot" data-s="jamas" data-l="The Jamas"></span>
-    <span class="sdot" data-s="council" data-l="Council"></span>
-    <span class="sdot" data-s="events" data-l="Events"></span>
-    <span class="sdot" data-s="timeline" data-l="Journey"></span>
     <span class="sdot" data-s="nice" data-l="N.I.C.E."></span>
-    <span class="sdot" data-s="connect" data-l="Connect"></span>
-    <span class="sdot" data-s="plan" data-l="Funeral Plan"></span>
+    <span class="sdot" data-s="connect" data-l="Directory"></span>
   </div>
 
-  <button class="fab" id="fab" aria-label="Quick actions">+</button>
+  <button class="fab" id="fab">+</button>
   <div class="fab-menu" id="fabMenu">
-    <a href="#plan" class="fab-item">💰 Contribute</a>
-    <a href="#events" class="fab-item">📅 Next Event</a>
-    <a href="#connect" class="fab-item">📞 Connect</a>
+    <a href="#plan" class="fab-item">Contribute Fund</a>
+    <a href="#connect" class="fab-item">Contact Council</a>
   </div>
 
   <section class="hero" id="hero">
-    <div class="hero-bg" id="heroBg">
+    <div class="hero-bg">
       <img src="Images/namilyango school bus.jpg" alt="Namilyango School Bus">
+      <div class="hero-vignette"></div>
     </div>
-    <canvas id="hc"></canvas>
     <div class="hero-c">
-      <div class="hero-tag">Namilyango College · The Brotherhood</div>
-      <h1 class="hero-h" id="heroh">
-        <span class="word"><span class="tm-1">NGO</span></span>
-        <span class="hero-spacer"></span>
-        <span class="word"><span class="tm-2 gold-lt">BUS</span></span>
-      </h1>
+      <div class="hero-tag">Namilyango College</div>
+      <h1 class="hero-h"><span class="reveal-text">NGO</span> <span class="reveal-text gold-text">BUS</span> <span class="reveal-text">'90</span></h1>
       <div class="hero-divider">
-        <div class="hero-divider-line"></div>
-        <div class="hero-divider-yr">1990 · The Jamas · 1996</div>
-        <div class="hero-divider-line r"></div>
+        <div class="line"></div>
+        <div class="yr">1990 — 1996</div>
+        <div class="line"></div>
       </div>
-      <p class="hero-sub">One home. For memory, connection, and everything we have built together.</p>
+      <p class="hero-sub">The definitive record of the brotherhood. Built for memory, connection, and generational wealth.</p>
       <div class="hero-cta">
-        <a href="#events" class="btn btn-gold">View Next Event</a>
-        <a href="#jamas" class="btn btn-outline">Enter the Archive</a>
+        <a href="#nice" class="btn btn-gold">Enter N.I.C.E. Portal</a>
+        <a href="#jamas" class="btn btn-outline">Explore the Archive</a>
       </div>
     </div>
-    <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <div class="marquee">
-    <div class="marquee-track" id="mqt">
-      </div>
+    <div class="marquee-track" id="mqt"></div>
   </div>
 
   <section class="s ls" id="jamas">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum">I</div>
-        <div class="stag">Chapter One</div>
-        <h2 class="stit">The Jamas</h2>
+        <div class="snum">01</div>
+        <div class="stag">Genesis</div>
+        <h2 class="stit">The Brotherhood</h2>
       </div>
       <div class="jamas-wrap">
         <div class="jamas-text">
-          <p class="lede rv">We boarded the bus as boys in 1990. We stepped off as <em>men</em> in 1996. What was forged in those six years has never broken.</p>
-          <p class="rv">Ngo Bus '90 — the Jamas — is the collective of those who walked those Namilyango halls together. The boarding houses, the chapel mornings, the rugby pitches, the dining halls.</p>
-          <p class="rv">Thirty years on, we remain bound by something neither time nor distance has unstitched.</p>
+          <p class="lede rv">We boarded the bus as boys in 1990. We stepped off as men in 1996. The bonds forged in those six years have never broken.</p>
+          <p class="rv">This is the collective of those who walked the halls of Namilyango. The boarding houses, the chapel mornings, the rugby pitches, and the unyielding discipline.</p>
         </div>
-        <div class="jamas-stats rvr">
-          <div class="stat-block"><div class="stat-n" data-c="1990">0</div><div class="stat-l">Boarded</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="1996">0</div><div class="stat-l">Left</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="30">0</div><div class="stat-l">Years</div></div>
-          <div class="stat-block"><div class="stat-n" data-c="8">0</div><div class="stat-l">Pillars</div></div>
+        <div class="jamas-stats rv">
+          <div class="stat-block"><div class="stat-n" data-c="1990">0</div><div class="stat-l">Inception Year</div></div>
+          <div class="stat-block"><div class="stat-n" data-c="1996">0</div><div class="stat-l">Departure Year</div></div>
+          <div class="stat-block"><div class="stat-n" data-c="30">0</div><div class="stat-l">Years Active</div></div>
+          <div class="stat-block"><div class="stat-n" data-c="47">0</div><div class="stat-l">Verified Members</div></div>
         </div>
       </div>
     </div>
   </section>
-  <div class="br-id"></div>
 
   <section class="s ds" id="council">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum">II</div>
-        <div class="stag">Chapter Two</div>
-        <h2 class="stit">The Inner Council</h2>
+        <div class="snum">02</div>
+        <div class="stag">Leadership</div>
+        <h2 class="stit">Inner Council</h2>
       </div>
-      <p class="rv s-intro">They were never elected. They emerged — by trust, by service, by years of quiet labour on behalf of the brotherhood.</p>
       <div class="council-grid">
-        <div class="council-card tilt rv">
-          <div class="cc-photo-wrap">
-            <img class="cc-photo" src="Images/JOHN baptist.jpg" alt="John Baptist" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="cc-photo-placeholder" style="display:none">JM</div>
-          </div>
+        <div class="council-card rv">
+          <div class="cc-img-wrap"><img src="Images/JOHN baptist.jpg" alt="JB" onerror="this.style.display='none'"></div>
           <div class="cc-body">
             <div class="cc-role">Chairman</div>
             <div class="cc-name">John Baptist Matovu</div>
-            <div class="cc-aka">aka <strong>Jibze</strong></div>
-            <p class="cc-quote">The brotherhood is a thing we build with our hands, our hours, and our word.</p>
+            <div class="cc-aka">"Jibze"</div>
           </div>
         </div>
-        <div class="council-card tilt rv">
-          <div class="cc-photo-wrap">
-            <img class="cc-photo" src="Images/mitch egwang.jpg" alt="Mitch Egwang" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="cc-photo-placeholder" style="display:none">ME</div>
-          </div>
+        <div class="council-card rv">
+          <div class="cc-img-wrap"><img src="Images/mitch egwang.jpg" alt="Mitch" onerror="this.style.display='none'"></div>
           <div class="cc-body">
             <div class="cc-role">Chief Mobilizer</div>
             <div class="cc-name">Mitch Egwang</div>
-            <div class="cc-aka">aka <strong>Nganga</strong></div>
-            <p class="cc-quote">When one brother is missing, the table is incomplete. We call until everyone is seated.</p>
+            <div class="cc-aka">"Nganga"</div>
           </div>
         </div>
-        <div class="council-card tilt rv">
-          <div class="cc-photo-wrap">
-            <div class="cc-photo-placeholder">MS</div>
-          </div>
+        <div class="council-card rv">
+          <div class="cc-img-wrap"><div class="cc-placeholder">MS</div></div>
           <div class="cc-body">
-            <div class="cc-role">Treasurer · 10 Years</div>
+            <div class="cc-role">Treasurer</div>
             <div class="cc-name">Mbanda Shyaka</div>
-            <div class="cc-aka">aka <strong>Mbandzo</strong></div>
-            <p class="cc-quote">No one voted me. I just sprouted. And here I still stand — ten years and counting.</p>
+            <div class="cc-aka">"Mbandzo"</div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="br-dn"></div>
 
-  <section class="s" id="events" style="background:var(--night)">
+  <section class="s ls" id="events">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum" style="color:var(--gold);opacity:.18">III</div>
-        <div class="stag" style="color:var(--gold2)">Chapter Three</div>
-        <h2 class="stit" style="color:var(--w)">Upcoming Events</h2>
+        <div class="snum">03</div>
+        <div class="stag">Operations</div>
+        <h2 class="stit">Agenda & Logs</h2>
       </div>
-      <div class="events-header-grid">
-        <p class="s-intro rv">Mark your calendar. These are the dates the brotherhood gathers — for fellowship, business, and celebration.</p>
-        <div class="countdown rv" id="countdown">
-          <div class="countdown-lbl">Next Gathering</div>
-          <div class="countdown-title" id="cdTitle">—</div>
-          <div class="countdown-display">
-            <div class="cd-cell"><div class="cd-num" id="cdD">0</div><div class="cd-lbl">Days</div></div>
-            <div class="cd-cell"><div class="cd-num" id="cdH">0</div><div class="cd-lbl">Hours</div></div>
-            <div class="cd-cell"><div class="cd-num" id="cdM">0</div><div class="cd-lbl">Min</div></div>
-          </div>
+      <div class="split-layout">
+        <div class="events-col">
+          <h3 class="sub-h rv">Upcoming Deployments</h3>
+          <div id="evList"></div>
+        </div>
+        <div class="timeline-col">
+          <h3 class="sub-h rv">Historical Markers</h3>
+          <div class="tl-track" id="tlTrack"></div>
         </div>
       </div>
-      <div class="events-list" id="evList"></div>
     </div>
   </section>
-  <div class="br-ni"></div>
-
-  <section class="s ls" id="timeline">
-    <div class="sc">
-      <div class="sh rv">
-        <div class="snum">IV</div>
-        <div class="stag">Chapter Four</div>
-        <h2 class="stit">The Journey</h2>
-      </div>
-      <p class="s-intro rv">Thirty-six years from the first day at Namilyango to this moment. A few of the markers along the way.</p>
-      <div class="tl-track" id="tlTrack"></div>
-    </div>
-  </section>
-  <div class="br-if"></div>
 
   <section class="mem-vault" id="vault">
-    <div class="sh rv">
-      <div class="snum" style="color:var(--gold);opacity:.18">V</div>
-      <div class="stag" style="color:var(--gold2)">Chapter Five</div>
-      <h2 class="stit" style="color:var(--w)">Memory Vault</h2>
+    <div class="sc">
+      <div class="sh rv">
+        <div class="snum">04</div>
+        <div class="stag">Archives</div>
+        <h2 class="stit">Memory Vault</h2>
+      </div>
     </div>
     <div class="gallery-wrap" id="gw">
       <div class="gallery-track" id="gt">
-        <div class="gallery-card">
-          <img src="Images/namilyango school bus.jpg" alt="Namilyango School Bus">
-          <div class="gc-ov"><div class="gc-ov-tag">Namilyango College</div><div class="gc-ov-title">The School Bus</div></div>
-        </div>
-        <div class="gallery-card text-card dark-card">
-          <div>📷</div>
-          <p>More photos from the archive coming soon.</p>
-        </div>
-        <div class="gallery-card text-card green-card">
-          <div>🎓</div>
-          <h4>Nabisunsa Prom Night</h4>
-          <p>November 1996</p>
-        </div>
+        <div class="gallery-card"><img src="Images/namilyango school bus.jpg" alt="Bus"><div class="gc-ov"><span>1990</span><h4>The Namilyango Bus</h4></div></div>
+        <div class="gallery-card text-card dark-card"><div>📷</div><p>Awaiting highly classified archive uploads.</p></div>
+        <div class="gallery-card text-card green-card"><div>🎓</div><h4>Nabisunsa Prom Night</h4><p>November 1996</p></div>
       </div>
-    </div>
-    <div class="gallery-hint rv">
-      <div class="gallery-hint-line"></div>
-      <span>Swipe to explore · Send photos to chairman</span>
-      <div class="gallery-hint-line"></div>
     </div>
   </section>
-  <div class="br-fi"></div>
 
-  <section class="s ls" id="nice">
+  <section class="s ds" id="nice">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum">VI</div>
-        <div class="stag">Chapter Six · Investment Club</div>
-        <h2 class="stit">N.I.C.E.</h2>
+        <div class="snum">05</div>
+        <div class="stag">Asset Management</div>
+        <h2 class="stit">N.I.C.E. Portfolio</h2>
       </div>
-
+      
       <div class="nice-metrics">
         <div class="nm-card rv">
-          <div class="nm-lbl">Portfolio Value</div>
-          <div class="nm-val"><span class="currency">UGX</span><span data-c="142000000">0</span></div>
-          <div class="nm-trend up">↑ 12.4% YoY</div>
+          <div class="nm-lbl">AUM (Assets Under Mgt)</div>
+          <div class="nm-val"><span>UGX</span> <span data-c="142000000">0</span></div>
+          <div class="nm-trend pos">+12.4% Fiscal Year</div>
         </div>
         <div class="nm-card rv">
-          <div class="nm-lbl">Active Projects</div>
+          <div class="nm-lbl">Active Acquisitions</div>
           <div class="nm-val" data-c="3">0</div>
-          <div class="nm-trend">2 active, 1 proposed</div>
+          <div class="nm-trend">Real Estate & Equities</div>
         </div>
         <div class="nm-card rv">
-          <div class="nm-lbl">Active Members</div>
+          <div class="nm-lbl">Syndicate Members</div>
           <div class="nm-val" data-c="47">0</div>
-          <div class="nm-trend">of the brotherhood</div>
-        </div>
-        <div class="nm-card rv">
-          <div class="nm-lbl">YoY Growth</div>
-          <div class="nm-val">12.4<span>%</span></div>
-          <div class="nm-trend up">↑ Outperforming</div>
+          <div class="nm-trend">Fully Vested</div>
         </div>
       </div>
 
       <div class="vision-box rv">
-        <div class="vision-tag">Our Vision</div>
-        <p class="vision-quote">"To compound the trust of the brotherhood into generational wealth — through disciplined investment, transparent reporting, and shared upside."</p>
+        <p>"To compound the trust of the brotherhood into generational wealth — through disciplined capital allocation, transparent reporting, and aggressive shared upside."</p>
       </div>
 
-      <div class="section-subhead rv">
-        <div class="nice-tagline">Meeting Calendar</div>
-        <h3 class="ss-title">When the council convenes.</h3>
-      </div>
-      <div class="meetings-grid">
-        <div class="mtg-panel upcoming rv">
-          <div class="mtg-panel-h">Upcoming Meetings</div>
-          <ul class="mtg-list" id="upMtg"></ul>
+      <div class="split-layout mt-60">
+        <div>
+          <h3 class="sub-h rv">Board Meetings</h3>
+          <ul class="exec-list" id="upMtg"></ul>
         </div>
-        <div class="mtg-panel recent rv">
-          <div class="mtg-panel-h">Recent Highlights</div>
-          <ul class="mtg-list" id="rcMtg"></ul>
+        <div>
+          <h3 class="sub-h rv">Recent Resolutions</h3>
+          <ul class="exec-list" id="rcMtg"></ul>
         </div>
       </div>
     </div>
   </section>
-  <div class="br-in"></div>
-
-  <section class="mem-section" id="memorial">
-    <div class="sc">
-      <div class="sh rv text-center">
-        <div class="snum center-snum">VII</div>
-        <div class="stag center-stag">Chapter Seven</div>
-        <h2 class="stit">In Memoriam</h2>
-      </div>
-      <p class="mem-quote rv">"To remember them by name is to keep the brotherhood whole."</p>
-      <div class="mem-flame-row">
-        <div class="mem-soul rv">
-          <div class="mem-photo-ring"><img src="Images/Mugerwa anthony (deceased).jpg" alt="Mugerwa Anthony" onerror="this.style.display='none'"></div>
-          <div class="mem-name">Mugerwa Anthony</div>
-          <div class="mem-aka-tag">Kapiti</div>
-        </div>
-        <div class="mem-soul rv">
-          <div class="mem-photo-ring"><img src="Images/ofong peter (deceased).jpg" alt="Ofong Peter" onerror="this.style.display='none'"></div>
-          <div class="mem-name">Ofong Peter</div>
-          <div class="mem-aka-tag">Jama</div>
-        </div>
-      </div>
-      <div class="flame rv"></div>
-    </div>
-  </section>
-  <div class="br-ni"></div>
-
-  <section class="voices-section" id="voices">
-    <div class="sc">
-      <div class="sh rv text-center">
-        <div class="snum center-snum">VIII</div>
-        <div class="stag center-stag">Chapter Eight</div>
-        <h2 class="stit">Voices</h2>
-      </div>
-      <div class="voices-stage" id="voicesStage"></div>
-      <div class="voices-dots" id="voicesDots"></div>
-    </div>
-  </section>
-  <div class="br-id"></div>
 
   <section class="s ls" id="connect">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum">IX</div>
-        <div class="stag">Chapter Nine</div>
-        <h2 class="stit">The Roll Call</h2>
+        <div class="snum">06</div>
+        <div class="stag">The Network</div>
+        <h2 class="stit">Executive Directory</h2>
       </div>
-      <p class="s-intro rv">A directory of Jamas. When you need a lawyer, a doctor, an engineer, a business contact — start here.</p>
+      
       <div class="rc-controls rv">
-        <div class="rc-search">
-          <span class="rc-search-icon">🔍</span>
-          <input type="text" id="rcSearch" placeholder="Search by name, nickname, or skill...">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="rcSearch" placeholder="Search by name, alias, or sector...">
         </div>
-        <div class="rc-filters" id="rcFilters">
-          <button class="rc-btn a" data-cat="all">All</button>
-          <button class="rc-btn" data-cat="finance">Finance</button>
-          <button class="rc-btn" data-cat="law">Law</button>
-          <button class="rc-btn" data-cat="medicine">Medicine</button>
+        <div class="filters" id="rcFilters">
+          <button class="filter-btn active" data-cat="all">Global</button>
+          <button class="filter-btn" data-cat="finance">Finance & Ops</button>
+          <button class="filter-btn" data-cat="law">Legal</button>
+          <button class="filter-btn" data-cat="medicine">Medical</button>
         </div>
       </div>
-      <div class="rc-grid" id="rcGrid">
-        </div>
+
+      <div class="directory-grid" id="rcGrid"></div>
     </div>
   </section>
-  <div class="br-id"></div>
 
   <section class="s ds" id="plan">
     <div class="sc">
       <div class="sh rv">
-        <div class="snum">X</div>
-        <div class="stag">Chapter Ten · Mutual Plan</div>
-        <h2 class="stit">When One Falls,<br>We Stand Together.</h2>
+        <div class="snum">07</div>
+        <div class="stag">Endowment & Honor</div>
+        <h2 class="stit">The Mutual Plan</h2>
       </div>
-      <div class="fp-wrap">
-        <div class="fp-card rv">
-          <div class="fp-headline">Funeral Plan · Active</div>
-          <div class="fp-title">The <em>Funeral</em> Plan</div>
-          <p class="fp-desc">When bereavement strikes a brother's household, we move together. There is no fixed amount — members give what they have.</p>
-          <div class="fp-btns">
-            <a href="#" class="btn btn-gold">Contribute Now</a>
+
+      <div class="plan-grid">
+        <div class="plan-card rv">
+          <h3>Bereavement Protocol</h3>
+          <p>When an active member's household experiences loss, the syndicate moves as one. No fixed quotas; capital is deployed rapidly based on collective resources to ensure no family stands alone.</p>
+          <div class="fund-status">
+            <div class="pulse-dot"></div>
+            <span>Fund Status: Active & Deployed</span>
           </div>
+          <button class="btn btn-gold mt-20">Initialize Contribution</button>
         </div>
-        <div>
-          <div class="fp-total-panel rv">
-            <div class="fp-total-badge">Live Balance</div>
-            <div class="fp-total-label">Total Collected to Date</div>
-            <div class="fp-total-value" id="fpTotal">UGX 0</div>
-            <div class="fp-total-updated">Last updated: <span id="fpDate">—</span></div>
+        
+        <div class="memoriam-panel rv">
+          <h3 class="text-center" style="color: var(--gold); margin-bottom: 30px; font-family: var(--f-serif);">In Memoriam</h3>
+          <div class="mem-list">
+            <div class="mem-item">
+              <img src="Images/Mugerwa anthony (deceased).jpg" alt="Anthony" onerror="this.style.display='none'">
+              <div>
+                <h4>Mugerwa Anthony</h4>
+                <span>"Kapiti"</span>
+              </div>
+            </div>
+            <div class="mem-item">
+              <img src="Images/ofong peter (deceased).jpg" alt="Peter" onerror="this.style.display='none'">
+              <div>
+                <h4>Ofong Peter</h4>
+                <span>"Jama"</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -392,42 +284,32 @@
   </section>
 
   <footer>
-    <div class="fi">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="brand-name">NGO <em>BUS</em> '90</div>
-          <p>The brotherhood of Namilyango College, class of 1990 to 1996. Bound in memory, bound in service, bound for life.</p>
+    <div class="sc">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <h2>NGO <span>BUS</span> '90</h2>
+          <p>Bound in memory, bound in service, bound for life. The absolute standard of Namilyango brotherhood.</p>
         </div>
-        <div class="footer-col">
-          <h5>The Brotherhood</h5>
-          <ul>
-            <li><a href="#jamas">The Jamas</a></li>
-            <li><a href="#timeline">Our Journey</a></li>
-            <li><a href="#memorial">In Memoriam</a></li>
-          </ul>
+        <div class="ft-links">
+          <h4>Portal Access</h4>
+          <a href="#jamas">The Archives</a>
+          <a href="#nice">N.I.C.E. Dashboard</a>
+          <a href="#connect">Global Directory</a>
+          <a href="#plan">Mutual Endowment</a>
         </div>
-        <div class="footer-col">
-          <h5>N.I.C.E. Club</h5>
-          <ul>
-            <li><a href="#nice">Overview</a></li>
-            <li><a href="#nice">Meeting Dates</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Members</h5>
-          <ul>
-            <li><a href="#connect">Roll Call</a></li>
-            <li><a href="#plan">Funeral Plan</a></li>
-          </ul>
+        <div class="ft-contact">
+          <h4>Direct Comm</h4>
+          <a href="#">Contact Chairman</a>
+          <a href="#">Treasury Desk</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div>© Ngo Bus '90 · Namilyango College</div>
-        <div class="footer-motto">Fraternitas Aeterna</div>
+      <div class="ft-bottom">
+        <span>&copy; 2026 NGO Bus '90 Executive Committee</span>
+        <span class="motto">Fraternitas Aeterna</span>
       </div>
     </div>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
 </body>
 </html>
