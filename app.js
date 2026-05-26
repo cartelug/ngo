@@ -30,7 +30,7 @@ const DATA = {
   directory: [
     { name:"John Baptist Matovu", aka:"Jibze",   tag:"Finance & Ops", img:"Images/JOHN baptist.jpg",  cat:"finance", init:"JM" },
     { name:"Mitch Egwang",        aka:"Nganga",  tag:"Mobilization",  img:"Images/mitch egwang.jpg",  cat:"all",     init:"ME" },
-    { name:"Mbanda Shyaka",       aka:"Mbandzo", tag:"Treasury",      img:"",                          cat:"finance", init:"MS" },
+    { name:"Mbanda Shyaka",       aka:"Mbandzo", tag:"Treasury",      img:"Images/mbanda.jpg",            cat:"finance", init:"MS" },
     { name:"[ Classified ]",      aka:"Counsel", tag:"Legal",         img:"",                          cat:"law",     init:"LA" },
     { name:"[ Classified ]",      aka:"Doc",     tag:"Medical",       img:"",                          cat:"medicine",init:"MD" }
   ],

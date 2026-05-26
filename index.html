@@ -228,8 +228,124 @@
           </div>
         </article>
         <article class="cc rv">
-          <div class="cc-img emp">
-            <div class="cc-fallback" aria-hidden="true">MS</div>
+          <div class="cc-img mbanda">
+            <!-- Real photo — shows if Images/mbanda.jpg exists -->
+            <img src="Images/mbanda.jpg" alt="Mbanda Shyaka" loading="lazy" class="mbanda-photo" onerror="this.style.display='none'">
+            <!-- Premium walking-figure frame — always visible beneath photo -->
+            <svg class="walk-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="mbg" cx="52%" cy="44%" r="64%">
+                  <stop offset="0%" stop-color="#111D16"/>
+                  <stop offset="100%" stop-color="#050910"/>
+                </radialGradient>
+                <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#C9A454" stop-opacity="0.07"/>
+                  <stop offset="100%" stop-color="#C9A454" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Background -->
+              <rect width="300" height="400" fill="url(#mbg)"/>
+              <!-- Subtle warm glow behind figure -->
+              <ellipse cx="150" cy="195" rx="120" ry="160" fill="url(#glow)"/>
+
+              <!-- Fine horizontal rule system (architectural grid) -->
+              <line x1="0" y1="64"  x2="300" y2="64"  stroke="#C9A454" stroke-opacity=".055" stroke-width=".5"/>
+              <line x1="0" y1="128" x2="300" y2="128" stroke="#C9A454" stroke-opacity=".055" stroke-width=".5"/>
+              <line x1="0" y1="198" x2="300" y2="198" stroke="#C9A454" stroke-opacity=".055" stroke-width=".5"/>
+              <line x1="0" y1="270" x2="300" y2="270" stroke="#C9A454" stroke-opacity=".055" stroke-width=".5"/>
+              <line x1="0" y1="340" x2="300" y2="340" stroke="#C9A454" stroke-opacity=".055" stroke-width=".5"/>
+
+              <!-- Large faint monogram -->
+              <text x="150" y="236" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="155" font-weight="900" fill="#C9A454" fill-opacity=".032">MS</text>
+
+              <!-- Motion arcs (energy rings centred on hip) -->
+              <circle cx="150" cy="198" r="86"  fill="none" stroke="#C9A454" stroke-opacity=".065" stroke-width=".75"/>
+              <circle cx="150" cy="198" r="126" fill="none" stroke="#C9A454" stroke-opacity=".04"  stroke-width=".5"/>
+              <circle cx="150" cy="198" r="166" fill="none" stroke="#C9A454" stroke-opacity=".025" stroke-width=".5"/>
+
+              <!-- ── WALKING FIGURE ── Montserrat-weight precision strokes ── -->
+
+              <!-- Head (perfect circle — facing slightly right) -->
+              <circle cx="149" cy="64" r="22" fill="none" stroke="#C9A454" stroke-width="1.6"/>
+              <!-- Direction indicator — faint horizontal eye-line -->
+              <line x1="137" y1="60" x2="163" y2="59" stroke="#C9A454" stroke-opacity=".38" stroke-width=".9"/>
+              <!-- Chin hint -->
+              <line x1="143" y1="84" x2="155" y2="86" stroke="#C9A454" stroke-opacity=".28" stroke-width=".9"/>
+
+              <!-- Neck -->
+              <line x1="149" y1="86" x2="148" y2="103" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- Shoulder bar (slight dynamic tilt — right dips for stride lean) -->
+              <line x1="94" y1="114" x2="203" y2="110" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- Spine — forward walking lean -->
+              <line x1="148" y1="103" x2="145" y2="198" stroke="#C9A454" stroke-width="2.1" stroke-linecap="round"/>
+
+              <!-- Rib-cage cross (very faint — depth detail) -->
+              <line x1="108" y1="136" x2="190" y2="132" stroke="#C9A454" stroke-opacity=".18" stroke-width=".8"/>
+
+              <!-- LEFT ARM — swinging forward (natural with right leg stride) -->
+              <line x1="94"  y1="114" x2="70"  y2="170" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="70"  y1="170" x2="55"  y2="205" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- RIGHT ARM — swinging back -->
+              <line x1="203" y1="110" x2="228" y2="162" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="228" y1="162" x2="242" y2="196" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- Hip bar -->
+              <line x1="122" y1="198" x2="168" y2="196" stroke="#C9A454" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- RIGHT LEG — forward stride, heel-strike (dominant leg forward) -->
+              <line x1="168" y1="196" x2="187" y2="271" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <line x1="187" y1="271" x2="202" y2="339" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <!-- Right foot — heel forward, toe slightly up -->
+              <line x1="202" y1="339" x2="229" y2="348" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <line x1="229" y1="348" x2="232" y2="342" stroke="#C9A454" stroke-width="1.4" stroke-linecap="round"/>
+
+              <!-- LEFT LEG — back, toe-off -->
+              <line x1="122" y1="198" x2="107" y2="271" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <line x1="107" y1="271" x2="94"  y2="335" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <!-- Left foot — toe pushing off behind -->
+              <line x1="94"  y1="335" x2="71"  y2="325" stroke="#C9A454" stroke-width="1.9" stroke-linecap="round"/>
+              <line x1="71"  y1="325" x2="69"  y2="331" stroke="#C9A454" stroke-width="1.4" stroke-linecap="round"/>
+
+              <!-- ── JOINT MARKERS — precision dots at every articulation ── -->
+              <circle cx="148" cy="103" r="2.8" fill="#C9A454"/>   <!-- neck-shoulder -->
+              <circle cx="94"  cy="114" r="2.2" fill="#C9A454"/>   <!-- L shoulder -->
+              <circle cx="203" cy="110" r="2.2" fill="#C9A454"/>   <!-- R shoulder -->
+              <circle cx="70"  cy="170" r="2.0" fill="#C9A454"/>   <!-- L elbow -->
+              <circle cx="228" cy="162" r="2.0" fill="#C9A454"/>   <!-- R elbow -->
+              <circle cx="145" cy="198" r="3.2" fill="#C9A454"/>   <!-- hip centre -->
+              <circle cx="168" cy="196" r="2.2" fill="#C9A454"/>   <!-- R hip -->
+              <circle cx="122" cy="198" r="2.2" fill="#C9A454"/>   <!-- L hip -->
+              <circle cx="187" cy="271" r="2.2" fill="#C9A454"/>   <!-- R knee -->
+              <circle cx="107" cy="271" r="2.2" fill="#C9A454"/>   <!-- L knee -->
+
+              <!-- ── GROUND SYSTEM ── -->
+              <!-- Ground line -->
+              <line x1="52" y1="354" x2="248" y2="354" stroke="#C9A454" stroke-opacity=".28" stroke-width="1"/>
+              <!-- Shadow ellipse -->
+              <ellipse cx="152" cy="357" rx="76" ry="4.5" fill="#C9A454" fill-opacity=".07"/>
+
+              <!-- Footprint impressions -->
+              <ellipse cx="222" cy="352" rx="13" ry="5" fill="#C9A454" fill-opacity=".09" transform="rotate(8 222 352)"/>
+              <ellipse cx="76"  cy="330" rx="11" ry="4" fill="#C9A454" fill-opacity=".07" transform="rotate(-16 76 330)"/>
+
+              <!-- ── FRAME DETAILS ── -->
+              <!-- Corner registration marks (technical drawing aesthetic) -->
+              <path d="M18 18 h22 M18 18 v22" stroke="#C9A454" stroke-opacity=".22" stroke-width=".75" fill="none"/>
+              <path d="M282 18 h-22 M282 18 v22" stroke="#C9A454" stroke-opacity=".22" stroke-width=".75" fill="none"/>
+              <path d="M18 382 h22 M18 382 v-22" stroke="#C9A454" stroke-opacity=".22" stroke-width=".75" fill="none"/>
+              <path d="M282 382 h-22 M282 382 v-22" stroke="#C9A454" stroke-opacity=".22" stroke-width=".75" fill="none"/>
+
+              <!-- Centre crosshair (very faint) -->
+              <line x1="145" y1="188" x2="145" y2="208" stroke="#C9A454" stroke-opacity=".12" stroke-width=".6"/>
+              <line x1="135" y1="198" x2="155" y2="198" stroke="#C9A454" stroke-opacity=".12" stroke-width=".6"/>
+
+              <!-- Role label at base -->
+              <text x="150" y="385" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8.5" font-weight="700" letter-spacing="4" fill="#C9A454" fill-opacity=".48">TREASURER</text>
+            </svg>
             <div class="cc-grad" aria-hidden="true"></div>
             <div class="cc-badge">Treasurer</div>
             <div class="cc-info">
